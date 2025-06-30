@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Counter</title>
+  <style>
+    body { font-family: system-ui; text-align: center; margin-top: 3rem; }
+    h1   { font-size: 4rem; }
+    button { font-size: 2rem; padding: 0.5rem 2rem; }
+  </style>
+</head>
+<body>
+  <h1 id="count">0</h1>
+  <button onclick="increment()">+1</button>
+
+  <script>
+    let n = 0;
+    function increment() {
+      n++;
+      document.getElementById('count').textContent = n;
+    }
+  </script>
+</body>
+</html>
